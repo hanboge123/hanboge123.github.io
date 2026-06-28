@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body {padding: 30px;
+    background: #fff;
+    }
+    /* 顶部标题栏 */
+    .top-title {
+        width: 420px;
+        height: 45px;
+        line-height: 45px;
+        background: #888;
+        color: #fff;
+        text-align: center;
+        font-size: 20px;
+        letter-spacing: 8px;
+        }
+        /* 注册外层容器 */
+        .register-box {
+            width: 420px;
+            border: 1px solid #999;
+            margin-top: 5px;
+            padding: 10px;
+            }
+            /* 注册小标题 */
+            .reg-title {
+                height: 32px;
+                line-height: 32px;
+                border: 1px solid #bbb;
+                padding-left: 10px;
+                margin-bottom: 15px;
+                background: #eee;
+                }
+                table {
+                    margin: 0 auto;
+                    }
+                    td {
+                    padding: 8px 5px;
+                    }
+                    /* 输入框容器，用来放内部图标 */
+                    .input-wrap {
+                    position: relative;
+                    }
+                    /* 输入框内左侧图标 */
+                    .input-wrap .icon {
+                        position: absolute;
+                        left: 8px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        font-size: 14px;
+                        }
+                        input[type="text"],
+                        input[type="password"],
+                        input[type="email"] ,
+                        {
+                        width: 220px;
+                        height: 26px;
+                        /* 左边留出图标位置，防止文字盖住图标 */
+                        padding-left: 30px;
+                        }
+                        /* 注册按钮 */
+                        .submit-btn {
+                         width: 220px;
+                         height: 30px;
+                         background: #777;
+                         color: #fff;
+                         border: none;
+                         cursor: pointer;
+                         }
+                         </style>
+                         </head>
+                         <body>
+                        <!-- 顶部书城标题 -->
+                        <div class="top-title">网 上 书 城</div>
+                        <div class="register-box">
+                        <div class="reg-title">➕ 注册新用户</div>
+                        <form action="#" method="post">
+                        <table>
+                        <tr>
+                        <td>
+                        <div class="input-wrap">
+                        <span class="icon"></span>
+                        <input type="text" name="username" placeholder="用户名">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap">
+                        <span class="icon"><span class="emoji emoji1f510"></span></span>
+                        <input type="password" name="pwd" placeholder="密码">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap">
+                        <span class="icon"><span class="emoji emoji1f510"></span></span>
+                        <input type="password" name="repwd" placeholder="确认密码">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="input-wrap">
+                        <span class="icon"><span class="emoji emoji1f4ee"></span></span>
+                        <input type="email" name="email" placeholder="电子邮件">
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="submit-btn" type="submit" value="注册新用户">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>
+
